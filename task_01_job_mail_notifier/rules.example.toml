@@ -1,0 +1,23 @@
+# Your additions to the built-in sorting rules. Copy this file to rules.toml (git-ignored) and edit.
+# Everything is optional. Phrases are plain text, matched case-insensitively as whole words in the
+# subject or body. After a change, re-sort recent mail with:  .\.venv\Scripts\python.exe main.py --days 14 --all
+
+# Job boards / recruiting sites you get mail from (their domains). Mail from them is fetched, and
+# links to them are shown on the cards. Built in: LinkedIn, Indeed, Glassdoor, Naukri, foundit,
+# Monster, Instahyre, iimjobs, hirist, Shine, Cutshort, Wellfound, TimesJobs, apna, Internshala, Unstop.
+job_boards = ["stepstone.de", "seek.com.au", "dice.com", "ziprecruiter.com"]
+
+# Extra words for the Gmail search that decides which mails are downloaded at all.
+keywords = ["praktikum", "werkstudent"]
+
+[phrases]
+# A mail containing one of these goes straight into that category.
+interview = ["panel discussion", "meet the team"]
+call = ["phone interview slot"]
+application = ["application acknowledgement"]
+job_alert = ["stellenangebot", "jobs you might like"]
+
+[noise]
+# Never show mail from these sender domains, or with these words in the subject.
+senders = ["newsletter.example.com"]
+subjects = ["weekly digest", "career fair"]

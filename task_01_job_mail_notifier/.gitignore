@@ -1,0 +1,11 @@
+# Personal data: never commit (the root .gitignore covers these too).
+.env
+rules.toml
+data/
+logs/
+reports/
+*.json
+*.tmp
+.venv/
+__pycache__/
+*.pyc

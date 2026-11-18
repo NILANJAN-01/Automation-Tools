@@ -1,0 +1,17 @@
+# Secrets and personal data
+.env
+rules.toml
+data/
+logs/
+reports/
+state.json
+pending.json
+history.json
+status.json
+hidden.json
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.tmp
